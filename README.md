@@ -1,9 +1,9 @@
 # Setting up Development Env
 ## installation of Vagrant, Virtual box and Ruby
 ### vagrant commands
-- ` vagrant up` to launch the vm
+- `vagrant up` to launch the vm
 - `vagrant destroy` to delete everything
-- `vagrant reload any new instruction in our `Vagrantfile`
+- `vagrant reload` any new instruction in our `Vagrantfile`
 - `vagrant halt` it poses the vm
 - `vagrant status`
 
@@ -13,7 +13,7 @@ Usage: vagrant [options] <command> [<args>]
     -v, --version                    Print the version and exit.
     -h, --help                       Print this help.
 
-Common commands:
+`Common commands:
      box             manages boxes: installation, removal, etc.
      cloud           manages everything related to Vagrant Cloud
      destroy         stops and deletes all traces of the vagrant machine
@@ -41,7 +41,7 @@ Common commands:
      validate        validates the Vagrantfile
      version         prints current and latest Vagrant version
      winrm           executes commands on a machine via WinRM
-     winrm-config    outputs WinRM configuration to connect to the machine
+     winrm-config    outputs WinRM configuration to connect to the machine`
 
 - Let's `ssh` into out vm and launch nginx web-server
 - user `apt-get` package manager in Linux - for max `homebrew` or only `brew`
