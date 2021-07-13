@@ -1,4 +1,5 @@
 # Setting up Development Env
+![](VMsetup.png)
 ## installation of Vagrant, Virtual box and Ruby
 ### vagrant commands
 - ` vagrant up` to launch the vm
@@ -67,3 +68,17 @@ For help on any individual command run `vagrant COMMAND -h`
 - step 5: vagrant ssh
 - step 6: repeat all the update and upgrade commands followed by installing nginx and checking of nginx
 - `ningx status active` should load nginx in the browswer with `192.168.10.100` as well as `http://development.local/`
+
+https://github.com/agiledivider/vagrant-hostsupdater
+
+- Let's automate the tasks that we did manually earlier today
+- create a file called `provision.sh`
+- `sudo apt-get update -y`
+- `sudo apt-get upgrade -y`
+- `sudo apt-get install nginx`
+- `systemctl status nginx`
+
+- To run provision.sh we need to give file permission and make this file executable
+- To change permission we use `chmod` with required permission then file name
+- `chmod +x provision.sh`
+- ./filename
